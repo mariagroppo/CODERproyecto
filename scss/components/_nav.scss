@@ -1,0 +1,22 @@
+.menu {
+    & li {
+        position: relative;
+        display: inline-block;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    & li:after {
+        content:"";
+        display: block;
+        background-color: colorPaleta('verde');
+        width: 100%;
+        margin:1px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path 1s;
+    }
+
+    & li:hover {
+        --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}

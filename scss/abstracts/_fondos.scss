@@ -1,0 +1,118 @@
+.fondo {
+    background-image: url(/imagenes/fondo1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    @include formatoTexto($fuente1, 15px, 'negro');
+    z-index: 1;     
+
+    &__Normas{
+        backdrop-filter: blur(7px);
+        background-image: url(/imagenes/fondo2.jpg);
+        background-size: cover;        
+    }
+
+    &__Nosotros{
+        background-image: url(/imagenes/fondo2.jpg);
+    }
+
+    &__Clientes{
+        backdrop-filter: blur(7px);
+        background-image: url(/imagenes/fondo1.jpg);
+    }
+
+}
+
+.header {
+    z-index: 3;
+    @include formatoTexto($fuente1, 20px, 'negro');
+    &__nav {
+        background-color: reduceColor('gris', 70%);
+    }
+    
+    &__div {
+        @include formatoTexto($fuente1, 20px, 'negro');
+        -webkit-text-stroke: 1px colorPaleta('negro');
+        letter-spacing: 2px;
+        //text-shadow: 5px 0 colorPaleta('negro');
+        border-bottom: 5px solid colorPaleta('negro');
+        //background: linear-gradient(to right, colorPaleta('verde'), colorPaleta('rosa'), colorPaleta('naranja'));
+        background-color: colorPaleta('verde');
+    }
+}
+
+.footer {
+    z-index: 3;    
+    background-color: reduceColor('gris', 60%);
+    &__address {
+        @include formatoTexto($fuente1, 1.5vw, 'negro');
+        
+    }
+}
+
+.tabla {
+    &__div {
+        &__info {
+            height: 300px;
+            overflow-y: scroll;
+            background-color: reduceColor('gris', 70%);
+            padding: 20px;
+            padding-top: 30px;
+        }
+    }
+}
+
+.section {
+    &__Home {
+        z-index: 3;
+        text-align: center;
+        width: 70%;
+        height: 60%;
+        clip-path: polygon(0% 0%, 100% 13%, 100% 50%, 100% 87%, 0% 100%);
+        background-color: reduceColor('verde', 80%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &__titulo1 {
+            @include formatoTexto($fuente2, 6vw, 'blanco');
+            text-shadow: 10px 5px reduceColor('negro', 80%);
+            -webkit-text-stroke: 0.5px colorPaleta('negro');
+        }
+    
+        &__titulo2 {
+            @include formatoTexto($fuente1, 2vw, 'negro');
+        }
+    
+        &__titulo3 {
+            @include formatoTexto($fuente1, 1.5vw, 'negro');
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    
+    &__Formulario {
+    @include formatoTexto($fuente1, 15px, 'negro');
+    z-index: 3;
+    }
+    &__Clientes {
+        height: 60vh;
+    }
+    &__Nosotros {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__Normas1 {
+        @include formatoTexto($fuente1, 15px, 'negro');
+        z-index: 3;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    &__Normas2 {
+        @include formatoTexto($fuente1, 10px, 'negro');
+        z-index: 3;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,28 @@
+@media screen and (max-width: 576px) {
+    
+    .section__Normas1 {
+        display: none;
+    }
+
+    .sectionHome {
+        margin-left: 20px;
+        &__titulo1 {
+            font-size: 30px;
+            
+        }
+        &__titulo2 {
+            font-size: 15px;
+            
+        }
+        &__titulo3 {
+            font-size: 10px;
+        }
+    }
+    
+    .footer__address {
+        font-size: 10px;
+    }
+    
+}
+
+

@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);
+.fondo {
+  background-image: url(/imagenes/fondo1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Amatic SC";
+  font-size: 15px;
+  color: black;
+  z-index: 1;
+}
+.fondo__Normas {
+  backdrop-filter: blur(7px);
+  background-image: url(/imagenes/fondo2.jpg);
+  background-size: cover;
+}
+.fondo__Nosotros {
+  background-image: url(/imagenes/fondo2.jpg);
+}
+.fondo__Clientes {
+  backdrop-filter: blur(7px);
+  background-image: url(/imagenes/fondo1.jpg);
+}
+
+.header {
+  z-index: 3;
+  font-family: "Amatic SC";
+  font-size: 20px;
+  color: black;
+}
+.header__nav {
+  background-color: rgba(201, 195, 195, 0.7);
+}
+.header__div {
+  font-family: "Amatic SC";
+  font-size: 20px;
+  color: black;
+  -webkit-text-stroke: 1px black;
+  letter-spacing: 2px;
+  border-bottom: 5px solid black;
+  background-color: #4da9a1;
+}
+
+.footer {
+  z-index: 3;
+  background-color: rgba(201, 195, 195, 0.6);
+}
+.footer__address {
+  font-family: "Amatic SC";
+  font-size: 1.5vw;
+  color: black;
+}
+
+.tabla__div__info {
+  height: 300px;
+  overflow-y: scroll;
+  background-color: rgba(201, 195, 195, 0.7);
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.section__Home {
+  z-index: 3;
+  text-align: center;
+  width: 70%;
+  height: 60%;
+  clip-path: polygon(0% 0%, 100% 13%, 100% 50%, 100% 87%, 0% 100%);
+  background-color: rgba(77, 169, 161, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__Home__titulo1 {
+  font-family: "Acme";
+  font-size: 6vw;
+  color: white;
+  text-shadow: 10px 5px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.5px black;
+}
+.section__Home__titulo2 {
+  font-family: "Amatic SC";
+  font-size: 2vw;
+  color: black;
+}
+.section__Home__titulo3 {
+  font-family: "Amatic SC";
+  font-size: 1.5vw;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section__Formulario {
+  font-family: "Amatic SC";
+  font-size: 15px;
+  color: black;
+  z-index: 3;
+}
+.section__Clientes {
+  height: 60vh;
+}
+.section__Nosotros {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section__Normas1 {
+  font-family: "Amatic SC";
+  font-size: 15px;
+  color: black;
+  z-index: 3;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.section__Normas2 {
+  font-family: "Amatic SC";
+  font-size: 10px;
+  color: black;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .section__Normas1 {
+    display: none;
+  }
+
+  .sectionHome {
+    margin-left: 20px;
+  }
+  .sectionHome__titulo1 {
+    font-size: 30px;
+  }
+  .sectionHome__titulo2 {
+    font-size: 15px;
+  }
+  .sectionHome__titulo3 {
+    font-size: 10px;
+  }
+
+  .footer__address {
+    font-size: 10px;
+  }
+}
+.contenedor__Home {
+  position: fixed;
+  background-color: white;
+  width: 85%;
+  height: 100vh;
+  clip-path: polygon(0 0, 86% 0, 56% 100%, 0% 100%);
+  z-index: 2;
+}
+
+.contenedor__Nosotros {
+  position: fixed;
+  background-color: #4da9a1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(79% 71%, 100% 0%, 100% 100%, 23% 100%);
+  z-index: 2;
+}
+
+.menu li {
+  position: relative;
+  display: inline-block;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.menu li:after {
+  content: "";
+  display: block;
+  background-color: #4da9a1;
+  width: 100%;
+  margin: 1px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 1s;
+}
+.menu li:hover {
+  --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.divPersona {
+  background-color: #ebe1e1;
+  border-radius: 5px;
+  box-shadow: inset 5px -5px 10px black;
+  z-index: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: fit-content;
+}
+.divPersona__foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  z-index: 5;
+}
+.divPersona__info {
+  font-family: "Amatic SC";
+  font-size: 1.5vw;
+  color: black;
+}
+.divPersona__info__links img {
+  width: 30px;
+  border-radius: 0%;
+  z-index: 5;
+}
+
+.cardServicios {
+  font-family: "Amatic SC";
+  font-size: 15px;
+  color: black;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+.cardServicios__div {
+  border-radius: 5px;
+  box-shadow: inset 5px -5px 10px black;
+}
+.cardServicios__div__img {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 7));
+  }
+}
+.slider {
+  z-index: 3;
+  background: rgba(201, 195, 195, 0.5);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * $cantidadClientes);
+}
+.slider .slide {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+.cardCliente {
+  width: 300px;
+  margin-top: 15px;
+  padding-top: 5px;
+  font-family: "Amatic SC";
+  font-size: 13px;
+  color: black;
+}
+.cardCliente__img {
+  object-fit: contain;
+}
+.cardCliente__div__img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.grupoCarsouel {
+  padding-top: 30px;
+  font-family: "Amatic SC";
+  font-size: 15px;
+  color: black;
+  z-index: 4;
+}
+.grupoCarsouel__imagen {
+  width: 300px;
+  height: 250px;
+}
+.grupoCarsouel__texto {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*# sourceMappingURL=styles.css.map */

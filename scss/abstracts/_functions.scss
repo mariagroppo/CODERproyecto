@@ -1,0 +1,14 @@
+@function colorPaleta($name) {
+    @return map-get($map: $paletaDeColores, $key: $name);
+}
+
+@function reduceColor($name, $amount) {
+    @return rgb(colorPaleta($name), $amount);
+}
+
+@mixin formatoTexto($fuente, $tamano, $color) {
+    font-family: $fuente;
+    font-size: $tamano;
+    color: colorPaleta($color);
+}
+

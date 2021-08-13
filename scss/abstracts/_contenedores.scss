@@ -1,0 +1,19 @@
+.contenedor__Home {
+    position: fixed;
+    background-color: colorPaleta('blanco');
+    width: 85%;
+    height: 100vh;
+    clip-path: polygon(0 0, 86% 0, 56% 100%, 0% 100%);
+    z-index: 2;
+    
+}
+
+.contenedor__Nosotros {
+    position: fixed;
+    background-color: colorPaleta('verde');
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(79% 71%, 100% 0%, 100% 100%, 23% 100%);
+    z-index: 2;
+}
+

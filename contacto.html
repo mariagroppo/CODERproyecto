@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>America Consultoría | Contacto</title>
+    <meta name="description" content="Brindamos asistencia técnica para el desarrollo, implementación, certificación y mantenimiento de sistemas de 
+    gestión basados en Normas ISO.">
+    <!--letra del contenido-->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <!--letra AMERICA-->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boot.css">
+
+</head>
+<body class="d-flex flex-column justify-content-between fondo">
+  <div class="contenedor__Home"></div>
+    
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light header__nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img src="imagenes/logo-america-consultoria.png" alt="Logo America Consultoria" width="50" height=auto></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+            <li class="nav-item text-dark">
+              <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" aria-current="page" href="normas.html">Normas</a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="servicios.html" tabindex="-1" aria-disabled="true">Servicios</a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <span class="target"></span>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>  
+    <div class="container-fluid align-self-start mt-2 px-3 py-1 text-center font-weight-bold header__div">
+      <h1>CONTACTO</h1>
+    </div>
+  </header>
+
+  <section class="section__Formulario">
+    <div class="row mt-2 mx-3">
+      <h3>Comunicate con nosotros</h3>
+      <p>Vía Whatsapp al <a href="https://api.whatsapp.com/send?phone=541136254208" rel="nofollow">(011) 15-3625-4208</a> o completando el siguiente formulario:</p>
+    </div>
+    <form class="row g-3 mx-3 mb-3">
+      <div class="col-md-6">
+        <label for="" class="form-label">Nombre/s</label>
+        <input type="text" class="form-control bg-secondary text-light" id="inputNombre">
+      </div>
+      
+      <div class="col-md-6">
+        <label for="" class="form-label">Apellido/s</label>
+        <input type="text" class="form-control bg-secondary text-light" id="inputApellido">
+      </div>
+      
+      <div class="col-md-4">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control bg-secondary text-light" id="inputEmail">
+      </div>
+      
+      <div class="col-md-2">
+        <label for="" class="form-label">Teléfono</label>
+        <input type="text" class="form-control bg-secondary text-light" id="inputTeléfono">
+      </div>
+
+      <div class="col-md-6">
+        <label for="" class="form-label">Motivo de consulta</label>
+        <select id="inputMotivo" class="form-select bg-secondary text-light">
+          <option selected>Seleccionar...</option>
+          <option>Presupuesto por consultoria</option>
+          <option>Presupuesto por mantenimiento</option>
+          <option>Presupuesto por capacitaciones</option>
+          <option>Presupuesto por auditorias</option>
+          <option>Unirse al equipo</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      
+      
+      <div class="col">
+        <label for="" class="form-label">Mensaje</label>
+        <textarea class="form-control bg-secondary text-light" id="inputMensaje" rows="5"></textarea>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Inscribirse al newsletter
+          </label>
+        </div>
+      </div>
+
+      
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+      
+      
+    </form>
+
+  </section>
+  
+  <footer class="footer">
+      <address class="text-end py-2 px-3 pie fuente1 tamaño3">
+          +52 (011) 15-3625-4208 <br>
+          info@americaconsultores.com
+      </address>
+  </footer>
+
+
+
+    <!--el link de script se pega siempre en body-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

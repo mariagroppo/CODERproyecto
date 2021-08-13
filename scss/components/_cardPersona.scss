@@ -1,0 +1,24 @@
+.divPersona {
+    background-color: colorPaleta('grisClaro');
+    border-radius: 5px;
+    box-shadow: inset 5px -5px 10px colorPaleta('negro');
+    z-index: 3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: fit-content;
+
+    &__foto img {
+        width: 200px;
+        height: 200px;
+        border-radius: 60%;
+        z-index: 5;
+    }
+    &__info {
+        @include formatoTexto($fuente1, 1.5vw, 'negro');
+        &__links img {
+            width: 30px;
+            border-radius: 0%; 
+            z-index: 5;
+        }
+    }
+}

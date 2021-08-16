@@ -116,3 +116,11 @@
     }
 }
 
+.list-group a.active {
+    background-color: reduceColor('verde', 80%);
+    border: 0.5px solid black;
+}
+
+.botonContacto button {
+    background-color: colorPaleta('verde');
+}

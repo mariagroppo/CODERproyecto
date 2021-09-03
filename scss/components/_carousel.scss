@@ -1,18 +1,23 @@
 .grupoCarsouel {
-	@include formatoTexto($fuente1, 15px, 'negro');
+	@include formatoTexto($fuente1, 16px, 'negro');
 	z-index:4;
 	height: 90%;
 	width: 80%;
 	padding-top: 30px;
 	&__imagen {
-		height: 250px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
 		object-position: center center;
+		max-width: 100%;
+		height: 250px;
+		
 	}
 
 	&__texto {
 		background-color: reduceColor('gris', 80%);
+		
 	}
 }
 

@@ -76,17 +76,17 @@
         align-items: center;
     
         &__titulo1 {
-            @include formatoTexto($fuente2, 6vw, 'blanco');
+            @include formatoTexto($fuente2, 60px, 'blanco');
             text-shadow: 10px 5px reduceColor('negro', 80%);
             -webkit-text-stroke: 0.5px colorPaleta('negro');
         }
     
         &__titulo2 {
-            @include formatoTexto($fuente1, 2vw, 'negro');
+            @include formatoTexto($fuente1, 20px, 'negro');
         }
     
         &__titulo3 {
-            @include formatoTexto($fuente1, 1.5vw, 'negro');
+            @include formatoTexto($fuente1, 15px, 'negro');
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -112,7 +112,7 @@
         margin-top: 30px;
     }
     &__Normas2 {
-        @include formatoTexto($fuente1, 10px, 'negro');
+        @include formatoTexto($fuente1, 15px, 'negro');
         z-index: 3;
         margin-bottom: 20px;
     }

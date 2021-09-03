@@ -4,25 +4,20 @@
         display: none;
     }
 
-    .sectionHome {
-        margin-left: 20px;
+    .section__Home {
         &__titulo1 {
-            font-size: 30px;
             
-        }
-        &__titulo2 {
-            font-size: 15px;
-            
-        }
-        &__titulo3 {
-            font-size: 10px;
+            @include formatoTexto($fuente2, 40px, 'blanco');
+            text-shadow: 10px 5px reduceColor('negro', 80%);
+            -webkit-text-stroke: 0.5px colorPaleta('negro');
         }
     }
     
     .footer__address {
-        font-size: 10px;
+        font-size: 15px;
     }
     
-}
+    
 
+}
 

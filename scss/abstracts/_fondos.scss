@@ -93,9 +93,10 @@
     }
     
     &__Formulario {
-    @include formatoTexto($fuente1, 15px, 'negro');
-    z-index: 3;
+        @include formatoTexto($fuente1, 15px, 'negro');
+        z-index: 3;
     }
+
     &__Clientes {
         height: 60vh;
         margin-top: 20px;
